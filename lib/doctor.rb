@@ -19,6 +19,6 @@ end
 end
 
   def patients
-    self.appointments.collect {|appointment| appointment.patient}
+    self.appointments.collect {|appointment| appointment.patient == self }
   end
 end
