@@ -12,12 +12,12 @@ end
 Appointment.new(patient, self, date)
 end
   def appointments
-    Appointment.all.select do |appointment|
+    Appointment.all.select do |appointments|
       appointment.doctor == self
   end
 end
 
   def patients
-    self.appointments.collect {|appointment| appointment.patient}
+    self.appointments.collect {|appointments| appointment.patient}
   end
 end
