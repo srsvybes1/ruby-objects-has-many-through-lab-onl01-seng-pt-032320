@@ -15,11 +15,11 @@ class Artist
     song = Song.new(name, self, genre)
     self.songs.last
   end
-end
   def songs
     Song.all.select do |song|
       song.artist == self
     end
+  end 
 #  def genres
 #    Song.all.map do |song|
 #      song.genre
