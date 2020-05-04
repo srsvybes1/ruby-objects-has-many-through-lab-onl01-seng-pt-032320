@@ -24,9 +24,9 @@ end
      Artist.all.select{|artist| artist.owner == self}
    end
   # #songs returns the @song array
-  def songs
-    @songs
-  end
+#  def songs
+#    @songs
+#  end
 
   # #genres iterates over that artist's songs and collects the genre of each songs
   def genres
