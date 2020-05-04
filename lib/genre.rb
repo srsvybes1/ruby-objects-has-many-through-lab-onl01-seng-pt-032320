@@ -1,19 +1,20 @@
 class Genre
 
   attr_accessor :name
-
-  #songs belong to genre
-  #has many songs
-  #has many artists through its songs
+@@all = []
   def initialize(name)
     @name = name
     @songs = []
+    @@all << self
   end
 
   def add_song(song)
     self.songs << song
   end
 
+def self.all
+  @@all
+end
 
   def songs
     @songs
