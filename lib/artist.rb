@@ -3,13 +3,16 @@ class Artist
   #songs belong to artist
   #has many songs
   #has many genres through its songs
-
+@@all = []
   #initialized with a name and an empty @songs array
   def initialize(name)
     @name = name
     @songs = []
+    @all << self
   end
-
+def all
+  @@all
+end
   #add_song takes in an argument of a songs
   #adds that song to the artists collection of songs.
   #tell the song that it belongs to the artist.
