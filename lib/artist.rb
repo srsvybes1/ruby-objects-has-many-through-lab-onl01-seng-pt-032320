@@ -21,7 +21,7 @@ end
     song.artist = self
   end
   def songs
-     Artist.all.select{|artist| artist.owner == self}
+     Artist.all.select {|artist| artist == self}
    end
   # #songs returns the @song array
 #  def songs
