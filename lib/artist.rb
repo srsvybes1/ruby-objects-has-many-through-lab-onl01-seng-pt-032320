@@ -10,7 +10,7 @@ class Artist
     @songs = []
     @@all << self
   end
-def all
+def self.all
   @@all
 end
   #add_song takes in an argument of a songs
