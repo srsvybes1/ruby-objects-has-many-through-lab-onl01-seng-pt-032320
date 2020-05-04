@@ -16,7 +16,7 @@ end
       appointment.doctor == self
   end
 end
-#has many patients through appointments
+
   def patients
     self.appointments.collect {|appointment| appointment.patient}
   end
